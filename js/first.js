@@ -31,6 +31,8 @@ updateBtn.addEventListener("click",()=>{
   arr[editIndex].input=input.value
   arr[editIndex].caption=caption.value
 
+  allPost.innerHTML=""
+
   play()
 
   updateBtn.style.display="none"
@@ -68,6 +70,7 @@ function play() {
         updateBtn.style.display = 'block'
 
 
+        editIndex=index
 
         input.value = arr[index].input
         caption.value = arr[index].caption
