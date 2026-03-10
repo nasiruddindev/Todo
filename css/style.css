@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
 body{
   display: flex;
@@ -8,60 +10,79 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgb(1, 14, 14);
 }
-.input-area{
+.input-box{
+  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
-.input{
+label{
+  font-size: 20px;
+}
+input{
   padding: 10px;
-  width: 300px;
-  border: 1px solid #000;
   border-radius: 10px;
+  border: 1\2px solid #000;
+  color: #000;
+  font-size: 20px;
 }
-.caption{
+textarea{
   padding: 10px;
-  width: 300px;
-  border: 1px solid #000;
   border-radius: 10px;
+  border: 2px solid #000;
+  color: #000;
+  font-size: 24px;
+  background-color: rgb(106, 154, 197);
 }
-.postBtn{
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  background-color: rgb(7, 47, 224);
-
-}
-.all-Post{
+.allPost{
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.all-Post h4{
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-.all-Post p{
-  padding-bottom: 10px;
+  column-gap: 30px;
 }
 .card{
   width: 300px;
-  padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid gold;
+  padding: 20px;
   border-radius: 10px;
 }
-.btn{
+.card h4{
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.postBtn{
   padding: 10px 20px;
-  border-radius: 10px;
-  color: #fff;
+  background-color: blue;
   border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(73, 48, 87, 0.542);
   cursor: pointer;
-  background-color: rgb(7, 47, 224);
+}
+.updatebtn{
+  display: none;
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(73, 48, 87, 0.542);
+  cursor: pointer;
+}
+.edit{
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: 2px 4px 4px #000000df;
+  cursor: pointer;
 }
 .delete{
+  padding: 10px 20px;
   background-color: red;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px #000000df;
+  cursor: pointer;
 }
