@@ -11,9 +11,11 @@ postBtn.addEventListener('click', () => {
   if (!input.value) {
     input.style.border = '2px solid red'
     input.placeholder = 'Pleasr enter something'
+    return
   } else if (!caption.value) {
     caption.style.border = '2px solid red'
     caption.placeholder = 'Pleasr enter something'
+    return
   } else {
     arr.push({
       input: input.value,
