@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   color: #fff;
 }
 body{
@@ -10,79 +9,50 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(1, 14, 14);
-}
-.input-box{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
 }
 label{
-  font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
 }
 input{
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #000;
-  color: #000;
-  font-size: 20px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 textarea{
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #000;
-  color: #000;
-  font-size: 24px;
-  background-color: rgb(106, 154, 197);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.updateBtn{
+  display: none;
 }
 .allPost{
-  margin-top: 50px;
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .card{
-  width: 300px;
-  border: 1px solid gold;
   padding: 20px;
+  margin-top: 50px;
+  width: 300px;
+  background-color: rgb(32, 31, 31);
   border-radius: 10px;
+  box-shadow: -2px 2px 4px #000;
 }
-.card h4{
-  font-size: 24px;
-  padding-bottom: 15px;
+.card h2{
+  margin-bottom: 10px;
 }
-.postBtn{
+.btn{
   padding: 10px 20px;
-  background-color: blue;
-  border: none;
+  font-size: 20px;
+  background-color: mediumblue;
   border-radius: 10px;
-  box-shadow: 0px 2px 2px rgba(73, 48, 87, 0.542);
-  cursor: pointer;
-}
-.updatebtn{
-  display: none;
-  padding: 10px 20px;
-  background-color: blue;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 2px 2px rgba(73, 48, 87, 0.542);
-  cursor: pointer;
-}
-.edit{
-  padding: 10px 20px;
-  background-color: blue;
-  border: none;
-  border-radius: 10px;
-  margin-right: 10px;
   margin-top: 20px;
-  box-shadow: 2px 4px 4px #000000df;
+  box-shadow: -2px 2px 5px #000;
   cursor: pointer;
 }
-.delete{
-  padding: 10px 20px;
+.deleteBtn{
   background-color: red;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 2px 4px 4px #000000df;
-  cursor: pointer;
+  margin-left: 10px;
 }
+
