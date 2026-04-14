@@ -1,8 +1,12 @@
+let main=document.querySelector(".main")
 let input=document.querySelector(".name")
 let caption=document.querySelector(".caption")
 let postBtn=document.querySelector(".postBtn")
 let allPost=document.querySelector(".allPost")
 let updateBtn=document.querySelector(".updateBtn")
+let popUp=document.querySelector(".popup")
+let editInput=document.querySelector(".editname")
+let editCaption=document.querySelector(".editcaption")
 
 
 let arr=[]
@@ -30,17 +34,20 @@ postBtn.addEventListener("click",()=>{
 })
 
 updateBtn.addEventListener("click",()=>{
-  arr[editIndex].input=input.value
-  arr[editIndex].caption=caption.value
+  arr[editIndex].input=editInput.value
+  arr[editIndex].caption=editCaption.value
 
   allPost.innerHTML=""
   play()
 
-  input.value=""
-  caption.value=""
+  editInput.value=""
+  editCaption.value=""
 
-  updateBtn.style.display="none"
-  postBtn.style.display="block"
+
+  main.style.display="block"
+  popUp.style.display="none"
+
+
 })
 
 
@@ -69,13 +76,21 @@ function play(){
     let convertEditBtn=Array.from(editBtn)
     convertEditBtn.forEach((item,index)=>{
       item.addEventListener("click",()=>{
-        postBtn.style.display="none"
+        
+
+        main.style.display="none"
+        popUp.style.display="block"
+
+
         updateBtn.style.display="block"
+        popUp.style.display="block"
+
+
 
         editIndex=index
 
-        input.value=arr[index].input
-        caption.value=arr[index].caption
+        editInput.value=arr[index].input
+        editCaption.value=arr[index].caption
 
       })
     })

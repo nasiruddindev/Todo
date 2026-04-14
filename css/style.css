@@ -15,7 +15,7 @@ label{
   font-size: 24px;
 }
 input{
-  padding: 10px 20px;
+  padding: 10px;
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -23,9 +23,9 @@ textarea{
   padding: 10px 20px;
   font-size: 18px;
 }
-.updateBtn{
+/* .updateBtn{
   display: none;
-}
+} */
 .allPost{
   display: flex;
   flex-wrap: wrap;
@@ -55,4 +55,19 @@ textarea{
   background-color: red;
   margin-left: 10px;
 }
+.popup-design{
+  display: flex;
+  flex-direction: column;
+}
+.popup{
+  display: none;
+  animation: popup 3s ease-in;
+}
+@keyframes popup{
+  from{
+    opacity: 0;
 
+  }to{
+    opacity: 1;
+  }
+}
